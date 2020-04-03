@@ -81,4 +81,9 @@ func TestMCounter(t *testing.T) {
 
 	tSlice(0, false, []string{"f", "c", "d", "b"})
 	tSlice(0, true, []string{"b", "d", "c", "f"})
+
+	tSet("c", 0)
+
+	tSlice(0, false, []string{"f", "d", "b"})
+	tSlice(0, true, []string{"b", "d", "f"})
 }
